@@ -1,6 +1,6 @@
 let anyString = 'I will write anything here';
 /**
- * String is iterator then will can iterate it 
+ * String is iterable then will can iterate it 
  * using a for loop. The iterable itens in a 
  * String are its characters.
  */
@@ -17,7 +17,7 @@ for (let character of anyString) {
  * What the previous loop did was to call
  * anyString.next() repeatedly until it reached
  * the last character of the string.
- * So lets see what anyString.next() returns.
+ * So lets see what anotherString.next() returns.
  */
 
 let anotherString = 'I wrote anything here againt';
@@ -30,7 +30,7 @@ console.log(anotherStringIterator.next()); //out: { value: 'I', done: false }
 
 /**
  * As the previous example demonstrated the next() call returned an object containing
- * the property 'done'. When 'done' is false, all the elements in an iterator
+ * the property 'done'. When 'done' is true, all the elements in an iterator
  * have been processed and the iteration must finish.
  */
 
@@ -51,7 +51,7 @@ function Person(fullName) {
         this.next = function() {
             let names;
             /**
-             * It the array of names does not exit yet, it will be created
+             * If the array of names does not exit yet, it will be created
              */
             if (!names) {
                 names = that.fullName.split(" ");
@@ -69,7 +69,7 @@ function Person(fullName) {
             /**
              * When the iteration is already done,
              * an object with undefined value and the flag done=true will tbe return.
-             * It will tell that the iteration is over.
+             * It will inform that the iteration is over.
              */
             return {
                 value: undefined,
@@ -78,7 +78,7 @@ function Person(fullName) {
         }
         /**
          * Needs to return an object that contains the function next().
-         * In this case, the function itself.
+         * In this case, the function[Symbol.iterator] itself.
          */
         return this;
 
@@ -88,7 +88,7 @@ function Person(fullName) {
 let person = new Person("Pedro Álvares Cabral");
 let personIterator = person[Symbol.iterator]();
 /**
- * The for will print:
+ * The following for loop will print:
  * 
  * Pedro
  * Álvares
