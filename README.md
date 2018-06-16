@@ -23,3 +23,7 @@ Many new function, as the previous examples, were added to Math
 [The new flag '/y' looks for patterns from the last last index and the last index only](./regex_y_flag.js)
 
 [The flags of a pattern can be discovered calling pattern.flags](./pattern_flags.js)
+
+### Iterators
+
+Iterators are objects that can be iterate (I'm genious). It means that you can take one element at time out of an iterator and process it, once an element has been taken the iterator will return the next element if asked. Anything can be an iterator if it has a function called 'Symbol.iterator'.  [Here is an example](./iterator_example.js)
