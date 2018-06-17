@@ -56,4 +56,8 @@ to test condition.
 [copyWithin()](https://www.w3schools.com/Jsref/jsref_copywithin.asp): Copies some elements of an array to other indexes inside the same array.  
 [entries()](https://www.w3schools.com/Jsref/jsref_entries.asp): Create an Array Iterator object, with key/value pairs for each item in a given array.  
 [keys()](https://www.w3schools.com/Jsref/jsref_keys.asp): Create an Array Iterator object, with keys for each item in the given array.  
-[values()](https://www.w3schools.com/Jsref/jsref_keys.asp): Create an Array Iterator object, with keys for each item in the given array. 
+[values()](https://www.w3schools.com/Jsref/jsref_keys.asp): Create an Array Iterator object, with keys for each item in the given array.  
+
+### ArrayBuffers and Type Arrays
+
+ArrayBuffer is a new feature that allows you to persist data in raw state and access it using Typed Arrays which are ways to represent the raw data. For example, you can create a BufferArray and read and/or write data in this array using 8-bits or 16-bits format by using respectively Int8Array or Int16Array. [Here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) you can find a detailed explanation.
