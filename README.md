@@ -26,4 +26,12 @@ Many new function, as the previous examples, were added to Math
 
 ### Iterators
 
-Iterators are objects that can be iterate (I'm genious). It means that you can take one element at time out of an iterator and process it, once an element has been taken the iterator will return the next element if asked. Anything can be an iterator if it has a function called 'Symbol.iterator'.  [Here is an example](./iterator_example.js)
+Iterators are objects that can be iterate (I'm a genious). It means that you can take one element at time out of an iterator and process it, once an element has been taken the iterator will return the next element if asked. Anything can be an iterator if it has a function called 'Symbol.iterator'.  [Here is an example](./iterator_example.js)
+
+### Generators
+
+While custom iterators are a useful tool, their creation requires careful programming due to the need to explicitly maintain their internal state. Generators provide a powerful alternative: they allow you to define an iterative algorithm by writing a single function which can maintain its own state.
+
+A GeneratorFunction is a special type of function that works as a factory for iterators. When it is executed it returns a new Generator object. A function becomes a GeneratorFunction if it uses the function* syntax.
+
+Examples on how to use generators are [here](./generator_example.js)
