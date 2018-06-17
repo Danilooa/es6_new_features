@@ -39,4 +39,21 @@ Examples on how to use generators are [here](./generator_example.js).
 ### Promises
 
 Promises are now available as part of language.
-Learn [here](./promise_example.js) here how to use it.
+Learn [here](./promise_example.js) how to use it.
+
+### Arrays
+
+Now it is possible to create an array of disctinct values calling Array.of.
+[Here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of) you can learn how to use it.
+
+Copy of an array can be done by calling Array.from.[Here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from) you can learn how to use it.
+
+The following functions have been added to the array prototype:  
+[fill()](https://www.w3schools.com/Jsref/jsref_fill.asp): fills an array with static values.  
+[find()](https://www.w3schools.com/Jsref/jsref_find.asp): Get the first value of an array that evaluates true
+to test condition.  
+[findIndex()](https://www.w3schools.com/Jsref/jsref_findindex.asp): Get the first index of an array that evaluates true to test condition.  
+[copyWithin()](https://www.w3schools.com/Jsref/jsref_copywithin.asp): Copies some elements of an array to other indexes inside the same array.  
+[entries()](https://www.w3schools.com/Jsref/jsref_entries.asp): Create an Array Iterator object, with key/value pairs for each item in a given array.  
+[keys()](https://www.w3schools.com/Jsref/jsref_keys.asp): Create an Array Iterator object, with keys for each item in the given array.  
+[values()](https://www.w3schools.com/Jsref/jsref_keys.asp): Create an Array Iterator object, with keys for each item in the given array. 
