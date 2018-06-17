@@ -35,3 +35,8 @@ While custom iterators are a useful tool, their creation requires careful progra
 A GeneratorFunction is a special type of function that works as a factory for iterators. When it is executed it returns a new Generator object. A function becomes a GeneratorFunction if it uses the function* syntax.
 
 Examples on how to use generators are [here](./generator_example.js).
+
+### Promises
+
+Promises are now available as part of language.
+Learn [here](./promise_example.js) here how to use it.
