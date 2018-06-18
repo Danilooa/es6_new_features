@@ -68,7 +68,7 @@ Maps are now available in ES6. [Here](https://developer.mozilla.org/en-US/docs/W
 
 ### WeakMaps
 
-WeakMaps are maps that hold weak references to objects. It means that a reference collected by the garbage collector will be removed from a weak map. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) you can find a complete explanation.
+WeakMaps are maps that hold weak references to objects. It means that a reference collected by the garbage collector will be removed from a weak map. [Here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) you can find a complete explanation.
 
 
 ### Sets
