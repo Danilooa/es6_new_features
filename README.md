@@ -61,3 +61,28 @@ to test condition.
 ### ArrayBuffers and Typed Arrays
 
 ArrayBuffer is a new feature that allows you to persist data in raw state and access it using Typed Arrays which are ways to represent the raw data. For example, you can create a BufferArray and read and/or write data in this array using 8-bits or 16-bits format by using respectively Int8Array or Int16Array. [Here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) you can find a detailed explanation.
+
+### Maps
+
+Maps are now available in ES6. [Here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) you can find a complete explanation.
+
+### WeakMaps
+
+WeakMaps are maps that hold weak references to objects. It means that a reference collected by the garbage collector will be removed from a weak map. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) you can find a complete explanation.
+
+
+### Sets
+
+Sets are now available in ES6. [Here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) you can find a complete explanation.
+
+### WeakSets
+
+WeakSets are sets that hold weak references to objects. It means that a reference collected by the garbage collector will be removed from a WeakSet. [Here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) you can find a complete explanation.
+
+
+### Subclassing
+
+
+????
+
+
