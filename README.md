@@ -2,7 +2,7 @@
 
 ### Classes
 
-Now it is possible to know which class actually owns the constructor called create an intance using the reference [new.target](./new_target.js) 
+Now it is possible to know which class actually owns the constructor called to create an instance using the reference [new.target](./new_target.js) 
 
 ### Math and numbers
 
