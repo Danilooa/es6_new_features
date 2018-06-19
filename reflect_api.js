@@ -169,3 +169,42 @@ let extensibleObject = new ExtensibleClass();
 Reflect.preventExtensions(extensibleObject);
 extensibleObject.anyProperty = 1;
 console.log(extensibleObject.anyProperty);
+
+/**
+ * If a third parameter is passed to Reflect.construct, the new.target will point 
+ * at it. 
+ */
+
+class Mammal {
+    constructor() {
+        console.log(`This animal has ${new.target.getNumberOfPaws()} paws.`);
+    }
+}
+
+class Cat {
+    static getNumberOfPaws() {
+        return 4;
+    }
+}
+
+let catInstance = Reflect.construct(Mammal, [], Cat); // It will This animal has 4 paws. since new.taget was pointed at Cat
+
+/**
+ * Reflect.apply can be used to call a function.
+ * The syntax is: Reflect.apply(target, this_reference, argument_list)
+ */
+
+class AnyClass {
+    showSomething(...args) {
+        console.log(`Showing anyProperty: "${this.anyProperty}"`);
+        console.log(`Showing args: "${args}"`);
+    }
+}
+
+/**
+ * The following line will print:
+ *
+ * Showing anyProperty: "Any value"
+ * Showing args: "arg1,arg2,arg3"
+ */
+Reflect.apply(AnyClass.prototype.showSomething, { anyProperty: 'Any value'}, ['arg1', 'arg2', 'arg3'] );
