@@ -91,7 +91,7 @@ WeakSets are sets that hold weak references to objects. It means that a referenc
 
 Reflect API is an object also called Reflect that offers different ways
 to add properties to objects, change prototypes at run time and so on.
-An tutorial of its main features can be seen [here](./reflect_api.js).
+A tutorial of its main features can be seen [here](./reflect_api.js).
 
 
 
