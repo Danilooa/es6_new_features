@@ -1,5 +1,9 @@
 # ES6 new features
 
+### Classes
+
+Now it is possible to know which class actually owns the constructor called create an intance using the reference [new.target](./new_target.js) 
+
 ### Math and numbers
 
 [It is better to call parseInt this way Number.parseInt](./number_parse_int.js)
