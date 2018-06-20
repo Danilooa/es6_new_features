@@ -93,6 +93,12 @@ Reflect API is an object also called Reflect that offers different ways
 to add properties to objects, change prototypes at run time and so on.
 A tutorial of its main features can be seen [here](./reflect_api.js).
 
+### Proxy
+
+Proxies allow you to intercept calls to functions and properties of target objects.
+In this way, operations such as logging, access control or even additional business rules could 
+be added without changing the target object. [Here](./proxy.js) is a tutorial on how to use proxies.
+
 
 
 
